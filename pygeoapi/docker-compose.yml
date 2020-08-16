@@ -1,0 +1,10 @@
+version: "3"
+services:
+        pygeoapi:
+                image: internetofwater/pygeoapi-geoconnex:contextmod
+                volumes:
+                  - ./data_out:/data_out
+                  - ./wdi.config.yml:/pygeoapi/local.config.yml
+                  - ./schemas.opengis.net:/opt/schemas.opengis.net
+                ports:
+                        - 7000:80
