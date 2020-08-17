@@ -41,7 +41,7 @@ st_write(places,"nmwdi-boundaries/data_out/places.gpkg")
 download.file(as.character(data_in[7,2]), "data_in/county.zip")
 unzip("data_in/county.zip",exdir="data_in")
 county <- st_read("data_in/tl_2018_nm_county.geojson")
-county$uri <- paste0(root,"county/",places$GEOID)
+county$uri <- paste0(root,"county/",county$GEOID)
 st_write(county,"nmwdi-boundaries/data_out/county.gpkg")
 
 
@@ -49,7 +49,7 @@ st_write(county,"nmwdi-boundaries/data_out/county.gpkg")
 download.file(as.character(data_in[6,2]), "data_in/congress.zip")
 unzip("data_in/congress.zip",exdir="data_in")
 congress <- st_read("data_in/nm_congressional_dist.geojson")
-#county$uri <- paste0(root,"county/",places$GEOID)
+congress$uri <- paste0(root,"congressional-district-2012-2020/",congress$District_N)
 st_write(congress,"nmwdi-boundaries/data_out/congress.gpkg")
 
 # st house
