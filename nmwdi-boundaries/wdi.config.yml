@@ -189,7 +189,7 @@ resources:
                     - FullName: https://schema.org/name
         nm_statesenate:
                 type: collection
-                title: NM State House 2012-2020 Boundaries
+                title: NM State Senate 2012-2020 Boundaries
                 description: New Mexico State Senate District Boundaries 2012-2020
                 keywords:
                         - boundaries
