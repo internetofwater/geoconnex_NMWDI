@@ -57,14 +57,14 @@ download.file(as.character(data_in[5,2]), "data_in/sthouse.zip")
 unzip("data_in/sthouse.zip",exdir="data_in")
 house <- st_read("data_in/house_boundaries.shp")
 house <- st_transform(house, 4326)
-#county$uri <- paste0(root,"county/",places$GEOID)
+house$uri <- paste0(root,"nm-state-house-2012-2020/",house$District_N)
 st_write(house,"nmwdi-boundaries/data_out/sthouse.gpkg")
 
 # st senate
 download.file(as.character(data_in[4,2]), "data_in/stsenate.zip")
 unzip("data_in/stsenate.zip",exdir="data_in")
 senate <- st_read("data_in/senate_boundaries.geojson")
-#county$uri <- paste0(root,"county/",places$GEOID)
+senate$uri <- paste0(root,"nm-state-senate-2012-2020/",senate$District_N)
 st_write(senate,"nmwdi-boundaries/data_out/senate.gpkg")
 
 

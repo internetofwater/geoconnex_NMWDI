@@ -136,6 +136,7 @@ resources:
                         data: /data_out/congress.gpkg
                         table: congress
                         id_field: District_N
+                        uri_field: uri
                 context:
                     - Name: https://schema.org/name
         nm_huc8:
@@ -183,6 +184,7 @@ resources:
                         data: /data_out/sthouse.gpkg
                         table: sthouse
                         id_field: District_N
+                        uri_field: uri
                 context:
                     - FullName: https://schema.org/name
         nm_statesenate:
@@ -206,5 +208,6 @@ resources:
                         data: /data_out/senate.gpkg
                         table: senate
                         id_field: District_N
+                        uri_field: uri
                 context:
                     - FullName: https://schema.org/name
