@@ -211,3 +211,28 @@ resources:
                         uri_field: uri
                 context:
                     - FullName: https://schema.org/name
+        nm_statesenate2:
+                type: collection
+                title: NM State Senate 2012-2020 Boundaries
+                description: New Mexico State Senate District Boundaries 2012-2020
+                keywords:
+                        - boundaries
+                links: 
+                    - type: application/html
+                      rel: canonical
+                      title: geographic data source
+                      href: https://catalog.newmexicowaterdata.org/dataset/nm-senate-boundaries
+                      hreflang: en-US
+                extents:
+                        spatial:
+                                bbox: [-180,-90,180,90]
+                                crs: http://www.opengis.net/def/crs/OGC/1.3/CRS84
+                provider:
+                        name: GeoJSON
+                        data: https://catalog.newmexicowaterdata.org/dataset/5eacb105-951f-42cf-860f-7f375b2322ea/resource/c2d15c85-72b3-4fcf-bfca-c83b60c3aef8/download/senate_boundaries.geojson
+                        id_field: District_N
+                        uri_field: uri
+                context:
+                    - FullName: https://schema.org/name
+                    
+                    
